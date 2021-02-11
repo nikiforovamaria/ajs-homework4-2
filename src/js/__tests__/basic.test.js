@@ -39,5 +39,5 @@ test('should return sorted data by life level 3', () => {
     { name: 'лучник', health: 80 },
     { name: 'мечник', health: 10 },
   ];
-  expect(data).toBe(result);
+  expect(data).not.toBe(result);
 });
