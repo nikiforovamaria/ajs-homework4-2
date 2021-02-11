@@ -27,3 +27,17 @@ test('should return sorted data by life level 2', () => {
   ];
   expect(data).toEqual(result);
 });
+
+test('should return sorted data by life level 3', () => {
+  const data = lifeLevel([
+    { name: 'мечник', health: 10 },
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+  ]);
+  const result = [
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+    { name: 'мечник', health: 10 },
+  ];
+  expect(data).toBe(result);
+});
